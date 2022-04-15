@@ -5,8 +5,8 @@ import lombok.*;
 
 import javax.persistence.*;
 
-@Entity(name = "job" )
-@Table(name = "tbl_jobs" )
+@Entity(name = "job")
+@Table(name = "tbl_jobs")
 @Getter
 @Setter
 @Builder
@@ -17,16 +17,15 @@ public class JobEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", unique = true, nullable = false)
-    @ApiModelProperty(notes = "İş ID", name = "id", required = true)
     private Long id;
 
-    @Column(name = "name",  nullable = false)
+    @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "description",  nullable = false)
+    @Column(name = "description", nullable = false)
     private String description;
 
-    @Column(name = "status",  nullable = true)
+    @Column(name = "status", nullable = true)
     private String status;
 
 

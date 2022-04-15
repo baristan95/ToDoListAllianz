@@ -8,7 +8,7 @@ import java.util.Optional;
 
 @Repository
 
-public interface JobRepository extends PagingAndSortingRepository <JobEntity, Long> {
+public interface JobRepository extends PagingAndSortingRepository<JobEntity, Long> {
 
     Optional<JobEntity> findById(Long id);
 

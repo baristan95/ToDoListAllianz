@@ -19,7 +19,7 @@ public class JobConverter {
                 .build();
     }
 
-    public List<JobResponseDto> toJobResponseList(List<JobEntity> jobEntities){
+    public List<JobResponseDto> toJobResponseList(List<JobEntity> jobEntities) {
         return jobEntities
                 .stream()
                 .map(this::toJobResponse)
