@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class JobNotFoundException extends RuntimeException{
 
     public JobNotFoundException() {
-        super("Job Not Found");
+        super("There is no Job");
     }
 }
