@@ -5,11 +5,11 @@
 http://localhost:8080/swagger-ui.html#/ link ile swagger üzerinden de açılmakta.
 
 
-findAll
+findAll:
 http://localhost:8080/jobs
 
 
-Create
+Create:
 {
     "name": "Toplanti",
     "description": "Saat 2 de zoom toplantisi ",
@@ -17,7 +17,7 @@ Create
 }
 
 
-Update
+Update:
 http://localhost:8080/jobs/1
 {
     "name": "Ekmek al",
@@ -25,9 +25,9 @@ http://localhost:8080/jobs/1
     "status": "Yapildi."
 }
 
-findById
+findById:
 http://localhost:8080/jobs/1
 
 
-delete
+delete:
 http://localhost:8080/jobs/4
